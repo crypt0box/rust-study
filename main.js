@@ -7,9 +7,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const start = new Date();
-setTimeout(() => {
-  console.log(isPrime(100000007));
-  const end = new Date() - start;
-  console.log(end / 1000 + "s");
-});
+const start = process.hrtime();
+console.log(isPrime(100000007));
+const end = process.hrtime(start);
+console.log(Math.round(end[1] / 1000000) + "ms");
