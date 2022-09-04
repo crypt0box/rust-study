@@ -1,7 +1,9 @@
 // mod is_prime;
-mod mutable;
+// mod mutable;
+mod variables;
 
 fn main() {
     // is_prime::run();
-    mutable::run();
+    // mutable::run();
+    variables::run();
 }
