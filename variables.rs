@@ -10,4 +10,8 @@ pub fn run() {
     let t = true;
     let f: bool = false;
     println!("{} {} {} {}", f32, f64, t, f);
+
+    let str = "hello"; // &str
+    let string = String::from("hello"); // String
+    println!("{} {}", str, string);
 }
